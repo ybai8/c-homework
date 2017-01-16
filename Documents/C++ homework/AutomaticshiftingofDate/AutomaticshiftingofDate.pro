@@ -10,11 +10,20 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = AutomaticshiftingofDate
 TEMPLATE = app
+CONFIG += c++11
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    createassignmententry.cpp \
+    createassignment.cpp \
+    createassignmentcontroller.cpp \
+    holiday.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    createassignmententry.h \
+    createassignment.h \
+    createassignmentcontroller.h \
+    holiday.h
 
 FORMS    += mainwindow.ui

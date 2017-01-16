@@ -1,11 +1,14 @@
 #ifndef HOLIDAY_H
 #define HOLIDAY_H
-
-
-class holiday
+#include<QDate>
+#include<QString>
+#include<QMessageBox>
+class Holiday
 {
+private:
+    QDate m_date;
 public:
-    holiday();
+    Holiday(QDate date);
+    QString festival();
 };
-
 #endif // HOLIDAY_H
